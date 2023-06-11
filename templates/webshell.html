@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WebShell</title>
+</head>
+<body>
+    <h1>WebShell</h1>
+    <form method="POST" action="/webshell">
+        <input type="text" name="command" placeholder="Enter command" value="{{ command }}" />
+        <input type="submit" value="Execute" />
+    </form>
+    <h2>Command Output:</h2>
+    <pre>{{ result }}</pre>
+</body>
+</html>

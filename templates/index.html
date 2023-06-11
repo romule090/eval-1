@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Список дел</title>
+</head>
+<body>
+    <h1>Список дел</h1>
+    <form action="/" method="post">
+        <input type="text" name="task" placeholder="Введите задачу" required>
+        <button type="submit">Добавить</button>
+    </form>
+    <ul>
+        {% for task in tasks %}
+            <li>{{ task }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
